@@ -8,7 +8,7 @@ $TTL    604800
 )
         IN      NS      ocp-svc
 
-ocp-svc.ocp.lan.          IN      A       192.168.22.1
+ocp-svc.ocp.lan.          IN      A       10.98.218.203
 
 ; Temp Bootstrap Node
 ocp-bootstrap.lab.ocp.lan.        IN      A      10.98.218.217
@@ -22,9 +22,9 @@ ocp-w-1.lab.ocp.lan.        IN      A      10.98.218.216
 ocp-w-2.lab.ocp.lan.        IN      A      10.98.218.218
 
 ; OpenShift Internal - Load balancer
-api.lab.ocp.lan.        IN    A    10.98.218.1
-api-int.lab.ocp.lan.    IN    A    10.98.218.1
-*.apps.lab.ocp.lan.     IN    A    10.98.218.1
+api.lab.ocp.lan.        IN    A    10.98.218.203
+api-int.lab.ocp.lan.    IN    A    10.98.218.203
+*.apps.lab.ocp.lan.     IN    A    10.98.218.203
 
 ; ETCD Cluster
 etcd-0.lab.ocp.lan.    IN    A     10.98.218.214
@@ -34,5 +34,5 @@ etcd-1.lab.ocp.lan.    IN    A     10.98.218.215
 _etcd-server-ssl._tcp.lab.ocp.lan.    86400     IN    SRV     0    10    2380    etcd-0.lab
 _etcd-server-ssl._tcp.lab.ocp.lan.    86400     IN    SRV     0    10    2380    etcd-1.lab
 
-oauth-openshift.apps.lab.ocp.lan.     IN     A     10.98.218.1
-console-openshift-console.apps.lab.ocp.lan.     IN     A     10.98.218.1
+oauth-openshift.apps.lab.ocp.lan.     IN     A     10.98.218.203
+console-openshift-console.apps.lab.ocp.lan.     IN     A     10.98.218.203
